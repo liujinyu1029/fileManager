@@ -38,7 +38,7 @@ var server = http.createServer(function (req, res) {
                                 //if (filename != filePath) {
                                 //    filename = filename.replace(filePath, "");
                                 //}
-                                var href  = path.join(cachePath, file);
+                                var href  = path.join(cachePath, file).replace(/\\/g,"/");
 
                                 if (path.extname(file)) {//有后缀 .jpg .css
                                     addStr += '<li class="gray"><a href="' + href + '" style="">' + file + ' </a></li>';
