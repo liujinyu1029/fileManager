@@ -1,0 +1,6 @@
+{
+  "name": "Filemanager",
+  "tagline": "静态服务器",
+  "body": "﻿这是一个静态文件服务器，服务说明:\r\n\r\n一、服务只是读取该项目（FileManager）中的文件；\r\n\r\n\r\n\r\n二、效果预览：\r\n   \r\n   你只需要运行项目中的server.js文件，然后，在浏览器中输入：localhost:8080 或者 127.0.0.1:8080 即可预览。\r\n\r\n\r\n\r\n三、做题思路：\r\n\r\n1、获取项目的绝对路径；\r\n\r\n2、获取请求的path，进行路径拼接；\r\n\r\n   判断请求，如果是icon则忽略；\r\n\r\n   else  执行3\r\n   \r\n\r\n3、判断请求的url是否存在；\r\n  \r\n  存在：\r\n      \r\n      （1）、判断文件是文件夹还是文件目录\r\n          \r\n             目录：遍历目录下的所有文件，\r\n\r\n             文件：判断文件的类型，读取文件，然后响应数据。\r\n              \r\n\r\n       （2）、获取一个路径，给文件的href\r\n\r\n   不存在：404，end;\r\n          ",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
